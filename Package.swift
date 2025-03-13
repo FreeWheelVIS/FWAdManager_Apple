@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "FWAdManager",
     platforms: [
-        .iOS(.v10), .tvOS(.v12)
+        .iOS(.v12), .tvOS(.v12)
     ],
     products: [
         .library(
@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FWAdManager",
-            url: "https://mssl.fwmrm.net/p/am_dist/Apple_AdManagerDistribution.zip",
-            checksum: "9779b8babc316edc52e7a493ce2d4629e671a4261848fbe297c4dbcb3c23cfec"),
+            url: "https://vi.freewheel.tv/static/demos/AdManager.xcframework.zip",
+            checksum: "092bbd3e57e25093e85b7bc8d6e9b594512be87b7d2bd7eac7ed74e8cfad2c40"),
     ]
 )
