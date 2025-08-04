@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdManager",
-            url: "https://vi.freewheel.tv/static/demos/AdManager.xcframework.zip",
-            checksum: "a9c9fccafd3189da9eab1b410fea673801a126bf9bf3b68823de1c4cd3624598"),
+            url: "https://arti.freewheel.tv/generic-local/vi/dist/Apple_AdManagerDistribution_7.10.0.zip",
+            checksum: "9266c31fe1c6a013528abf3663eb383d78dcb4ab623681d130a383238c0b3d92"),
     ]
 )
