@@ -1,4 +1,10 @@
 ## Change Log
+**7.11.0**
+- TVP-50340 [iOS/tvOS] Distribute in Swift Package Manager
+    - AdManager XCFramework is now available as a Swift Package
+    - Add the following repository URL to your project: https://github.com/FreeWheelVIS/FWAdManager_Apple
+    - The package automatically includes both iOS and tvOS frameworks
+
 **7.10**
 - TVP-44176 [iOS/tvOS] Support retrieving Extensions data from Smart XML and third-party VAST responses and replace [adInstance vastExtensionsWithType] API with [adInstance getExtensionByType]
     - New API: [adInstance getAllExtensions]
