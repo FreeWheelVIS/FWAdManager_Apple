@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdManager",
-            url: "https://github.com/FreeWheelVIS/FWAdManager_Apple/releases/download//Apple_AdManagerDistribution_.zip",
+            url: "https://github.com/FreeWheelVIS/FWAdManager_Apple/releases/download/0.0.8/Apple_AdManagerDistribution_0.0.8.zip",
             checksum: ""),
     ]
 )
