@@ -1,9 +1,51 @@
 ## Change Log
 **7.11.0**
 - TVP-50340 [iOS/tvOS] Distribute in Swift Package Manager
-    - AdManager XCFramework is now available as a Swift Package
-    - Add the following repository URL to your project: https://github.com/FreeWheelVIS/FWAdManager_Apple
-    - The package automatically includes both iOS and tvOS frameworks
+    - AdManager XCFramework is now available as a Swift Package.
+    - Add the following repository URL to your project: https://github.com/FreeWheelVIS/FWAdManager_Apple.
+    - The package automatically includes both iOS and tvOS frameworks.
+    - Add "import AdManager" in your code.
+
+- TVP-51151 [iOS/tvOS] Add FWQRCodeExtension to support displaying a QR code for the first click-through URL on video ads.
+    - New Constants
+        - FWParameterExtensionQRCodeWidth
+            - An NSString that the FWQRCodeExtension should use for the QR code width.
+                - If the parameter is set, the FWQRCodeExtension will use this value as the QR code width.
+                - The default value is @"150".
+                - Valid range: 50-500 pixels.
+        - FWParameterExtensionQRCodeHeight
+            - An NSString that the FWQRCodeExtension should use for the QR code height.
+                - If the parameter is set, the FWQRCodeExtension will use this value as the QR code height.
+                - The default value is @"150".
+                - Valid range: 50-500 pixels.
+        - FWParameterExtensionQRCodeOffsetX
+            - An NSString that the FWQRCodeExtension should use for horizontal positioning offset.
+                - If the parameter is set, the FWQRCodeExtension will use this value for horizontal offset.
+                - The default value is @"10".
+                - Valid range: 0-1000 pixels.
+        - FWParameterExtensionQRCodeOffsetY
+            - An NSString that the FWQRCodeExtension should use for vertical positioning offset.
+                - If the parameter is set, the FWQRCodeExtension will use this value for vertical offset.
+                - The default value is @"10".
+                - Valid range: 0-1000 pixels.
+        - FWParameterExtensionQRCodeErrorCorrectionLevel
+            - An NSString that the FWQRCodeExtension should use for QR code error correction level.
+                - If the parameter is set, the FWQRCodeExtension will use this value for error correction.
+                - The default value is @"Q".
+                - Valid values: @"L" (Low), @"M" (Medium), @"Q" (Quartile), @"H" (High).
+                - Higher correction levels provide better error recovery but may result in larger QR codes.
+        - FWParameterExtensionQRCodeCornerRadius
+            - An NSString that the FWQRCodeExtension should use for QR code corner radius.
+                - If the parameter is set, the FWQRCodeExtension will use this value for corner radius.
+                - The default value is @"0.0".
+                - Valid range: 0.0-50.0 pixels.
+                - 0.0 creates square corners, higher values create more rounded corners.
+        - FWParameterExtensionQRCodeAlpha
+            - An NSString that the FWQRCodeExtension should use for QR code transparency.
+                - If the parameter is set, the FWQRCodeExtension will use this value for transparency.
+                - The default value is @"1.0".
+                - Valid range: 0.0-1.0.
+                - 0.0 is fully transparent, 1.0 is fully opaque.
 
 **7.10**
 - TVP-44176 [iOS/tvOS] Support retrieving Extensions data from Smart XML and third-party VAST responses and replace [adInstance vastExtensionsWithType] API with [adInstance getExtensionByType]
