@@ -1,4 +1,9 @@
 ## Change Log
+**7.12.0**
+- TVP-53059 [iOS/tvOS] Update OMSDK to version 1.5.6
+
+- TVP-53009 [iOS/tvOS] Update AdManager for iOS/tvOS 26
+
 **7.11.0**
 - TVP-50340 [iOS/tvOS] Distribute in Swift Package Manager
     - AdManager XCFramework is now available as a Swift Package.
