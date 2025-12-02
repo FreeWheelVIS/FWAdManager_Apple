@@ -1,4 +1,7 @@
 ## Change Log
+**7.13.0**
+- TVP-59245 [iOS/tvOS] Remove case sensitivity for parsing extensions and extension nodes in SMRX ad response
+
 **7.12.0**
 - TVP-53059 [iOS/tvOS] Update OMSDK to version 1.5.6
 
