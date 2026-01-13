@@ -1,4 +1,13 @@
 ## Change Log
+
+**7.14.0**
+- TVP-61080 [iOS/tvOS] Include CFBundleShortVersionString in User-Agent
+    - Updated user-agent string to use CFBundleShortVersionString instead of CFBundleVersion
+    - Example: Mozilla/5.0 (iPad13,1; iOS 18.6.2) FreeWheelAdManager/7.14.0-x7xx14x7-202510241804;com.fw.your.bundle Some App/8.25.0.1356
+    - Mozilla/5.0 (model; iOS systemVersion) FreeWheelAdManager/@FW_BUILD_STAMP;CFBundleIdentifier CFBundleName/CFBundleShortVersionString
+
+- TVP-61194 [iOS/tvOS] Update parsing of Smart XML extensions to parse type property if present
+
 **7.13.0**
 - TVP-59245 [iOS/tvOS] Remove case sensitivity for parsing extensions and extension nodes in SMRX ad response
 
