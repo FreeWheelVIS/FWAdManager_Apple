@@ -1,4 +1,15 @@
 ## Change Log
+**7.15.0**
+- TVP-60507 [iOS] Update FWHTMLRenderer to only use deprecated window.onorientationchange() if function exists.
+- TVP-53012 [iOS/tvOS] Upgraded OMSDK version to 1.6.2
+- TVP-61869 [iOS/tvOS] Added FWCapabilityDisableTrackingRedirect, which adds the 'disableTrackingRedirect' capability to the ad request
+    - New Constant: FWCapabilityDisableTrackingRedirect
+        - When enabled:
+            - For SMRX responses, AdManager will open the first trackingURL in a new browser tab. The defaultClick beacon and any additional trackingUrls will still be fired in the background.
+            - When a VAST ad containing a ClickThrough node is played, the url from the VAST ClickThrough node will not be appended to the cr= parameter in the defaultClick beacon
+                - Upon click, AdManager will open the VAST clickThrough url in a new browser tab, and fire the defaultClick beacon in the background.
+        - Defaults to OFF
+    - FWCapabilityDisableTrackingRedirect is currently not supported with the FWQRCodeExtension.
 
 **7.14.0**
 - TVP-61080 [iOS/tvOS] Include CFBundleShortVersionString in User-Agent
