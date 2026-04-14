@@ -1,4 +1,10 @@
 ## Change Log
+**7.15.1**
+- TVP-61570 [iOS/tvOS] Add Multi-Ad Pod Fallback Support for VAST ads
+    - If a VAST ad contains more than one Ad node, the additional Ad nodes will be used as fallback ads.
+    - AdManager will only fire a FreeWheel error beacon if all VAST ad nodes fail. Third party Error tracking url will fire for each ad node, if available.
+    - Fallback ads from VAST will be prioritized over fallback ads contained in the fallbackAds node of the SMRX ad response.
+
 **7.15.0**
 - TVP-60507 [iOS] Update FWHTMLRenderer to only use deprecated window.onorientationchange() if function exists.
 - TVP-53012 [iOS/tvOS] Upgraded OMSDK version to 1.6.2
