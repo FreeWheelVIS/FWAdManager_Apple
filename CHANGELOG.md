@@ -1,4 +1,8 @@
 ## Change Log
+**7.16.0**
+- TVP-65992 [iOS] Updated DTRD logic to handle SIMID, HTML, and VPAID ads with clickthrough
+    - FWAdManager will prioritize the clickthrough URL from SIMID, HTML, and VPAID ads when their SMRX and/or VAST response also contain a clickthrough URL.
+
 **7.15.1**
 - TVP-61570 [iOS/tvOS] Add Multi-Ad Pod Fallback Support for VAST ads
     - If a VAST ad contains more than one Ad node, the additional Ad nodes will be used as fallback ads.
