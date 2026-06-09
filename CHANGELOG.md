@@ -1,4 +1,9 @@
 ## Change Log
+**7.17.0**
+- TVP-68876 [iOS/tvOS] Implement pause ad rotation logic for FWPauseAdExtension.
+    - If multiple pause ads are available for a given temporal slot, AdManager will render a different pause ad each time the user pauses the content video.
+    - AdManager will render the pause ads in the order they were returned in the ad response. Once all pause ads have been rendered once, AdManager will return to the beginning of the list of pause ads. 
+
 **7.16.0**
 - TVP-65992 [iOS] Updated DTRD logic to handle SIMID, HTML, and VPAID ads with clickthrough
     - FWAdManager will prioritize the clickthrough URL from SIMID, HTML, and VPAID ads when their SMRX and/or VAST response also contain a clickthrough URL.
