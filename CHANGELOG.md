@@ -1,4 +1,10 @@
 ## Change Log
+**7.18.0**
+- TVP-70897 [iOS] Add logic to enable forcing opaque in-app view navigation bar background in iOS 26+.
+    - Add new parameter FWParameterInAppViewNavigationBarForceOpaqueBackground.
+        - This parameter is used in conjunction with FWParameterInAppViewNavigationBarBackgroundColor. When only FWParameterInAppViewNavigationBarBackgroundColor is set, that value will be used as the `barTintColor` for the in-app view navigation bar. When FWParameterInAppViewNavigationBarForceOpaqueBackground is enabled and the device is running iOS 26+, the color will be used as the `backgroundColor` instead of `barTintColor` for the in-app view navigation bar.
+        - This parameter was added due to updates in iOS 26, where setting `barTintColor` has no effect. We recommend following Apple Liquid Glass design guidelines, which calls for transparent navigation bars, but if a background color must be set, this parameter can be enabled.
+
 **7.17.0**
 - TVP-68876 [iOS/tvOS] Implement pause ad rotation logic for FWPauseAdExtension.
     - If multiple pause ads are available for a given temporal slot, AdManager will render a different pause ad each time the user pauses the content video.
