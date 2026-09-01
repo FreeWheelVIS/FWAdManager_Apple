@@ -1,4 +1,11 @@
 ## Change Log
+**7.20.0**
+- TVP-15007 [iOS/tvOS] Update rendition selection logic to use bitrate in adResponse if the calculated bitrate value is invalid.
+- TVP-75784 [iOS/tvOS] Fix edge case where if a clickthrough url is set by calling `adInstance.setEventCallbackUrls`, the url will not be updated if retrieved through calling `adInstance.getEventCallbackUrlsByEventName`.
+- TVP-70444 [iOS] Fix edge case so that defaultClick beacon does not include a redirect value (cr=) if SIMID or VPAID creative includes playerHandles:false.
+- TVP-55160 [iOS/tvOS] Improve reliability of EVENT_AD_PAUSE and EVENT_AD_RESUME events in the FWVideoAdRenderer.
+    - EVENT_AD_PAUSE and EVENT_AD_RESUME are only fired when ad video is actually paused or resumed.
+
 **7.18.0**
 - TVP-70897 [iOS] Add logic to enable forcing opaque in-app view navigation bar background in iOS 26+.
     - Add new parameter FWParameterInAppViewNavigationBarForceOpaqueBackground.
